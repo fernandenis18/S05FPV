@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class accesoazonaunica : MonoBehaviour
+{
+    string acceso;
+    bool inCombat;
+    int nivel = 0;
+    bool paseVip;
+    void Start()
+    {
+        acceso = ((paseVip || nivel >= 10) && !inCombat) ? "acceso permitido" : "acceso denegado";
+        print(acceso);
+    }
+
+    
+    void Update()
+    {
+        
+    }
+}

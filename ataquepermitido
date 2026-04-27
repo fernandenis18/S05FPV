@@ -1,0 +1,24 @@
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class ataquepermitido : MonoBehaviour
+{
+    bool hasGun;
+    bool HasAmmo;
+    bool stun = false;
+    void Start()
+    {
+            if ((hasGun && HasAmmo) && !stun) 
+            {
+                Debug.Log("Puedes atacar");
+            }
+            else
+            {
+                Debug.Log("no puedes atacar");
+            }
+    }
+    void Update()
+    {
+        
+    }
+}

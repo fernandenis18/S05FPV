@@ -1,0 +1,29 @@
+using UnityEngine;
+
+public class iaenemiga : MonoBehaviour
+{
+    bool jugadorCerca;
+    bool jugadorAlaVista;
+    void Start()
+    {
+        if (jugadorCerca && jugadorAlaVista) 
+        {
+            Debug.Log("enemigo ataca");
+        }
+        else if (!jugadorCerca && jugadorAlaVista) 
+        {
+            Debug.Log("enemigo persigue");
+        }
+        else 
+        {
+            Debug.Log("enemigo patrulla");
+        }    
+
+    }
+
+    
+    void Update()
+    {
+        
+    }
+}

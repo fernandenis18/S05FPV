@@ -1,0 +1,31 @@
+using UnityEngine;
+
+public class estadovisualdesalud : MonoBehaviour
+{
+    string state;
+    int vida = 0;
+    void Start()
+    {
+        state = (vida < 20) ? (vida >10) ? "herido" : "critico" : "estable";
+
+
+        if(vida < 20)
+        {
+            if (vida > 10)
+                print("herido");
+            else
+                print("critico");
+        }
+        else
+        {
+            print("estable");
+        }
+
+    }
+
+   
+    void Update()
+    {
+        
+    }
+}

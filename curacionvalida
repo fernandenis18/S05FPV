@@ -1,0 +1,29 @@
+using UnityEngine;
+
+public class curacionvalida : MonoBehaviour
+{
+    
+    bool hasPotion;
+    bool safezone;
+    bool isAlive;
+    void Start()
+    {
+        if ((hasPotion || safezone) && isAlive)
+        {
+            Debug.Log("curacion disponible");
+        }
+        else 
+        {
+            Debug.Log("no puedes curarte");
+        }
+           
+    
+    }
+
+
+    
+    void Update()
+    {
+        
+    }
+}

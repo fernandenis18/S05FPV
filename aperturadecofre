@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class aperturadecofre : MonoBehaviour
+{
+    bool hasKey;
+    int level = 0;
+    bool inCombat;
+    void Start()
+    {
+        if ((hasKey || level >= 15) && !inCombat)
+        {
+            Debug.Log("cofre abierto");
+        }
+        else 
+        {
+            Debug.Log("no puedes abrir cofre");
+        }
+
+    }
+
+    
+    void Update()
+    {
+        
+    }
+}

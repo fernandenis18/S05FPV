@@ -1,0 +1,27 @@
+using UnityEngine;
+
+public class activarhabilidad : MonoBehaviour
+{
+    int mana = 0;
+    int stamina = 0;
+    bool enemigoCerca;
+    bool cooldown;
+    void Start()
+    {
+        if ((mana >= 50) && (stamina >= 20) && enemigoCerca && !cooldown) 
+        {
+            Debug.Log("habilidad activada");
+        }
+        else
+        {
+            Debug.Log("habilidad no permitida");
+
+        }
+    }
+
+    
+    void Update()
+    {
+        
+    }
+}

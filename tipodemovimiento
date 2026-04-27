@@ -1,0 +1,18 @@
+using UnityEngine;
+
+public class tipodemovimiento : MonoBehaviour
+{
+    string typeOfMovement;
+    int stamina = 0;
+    void Start()
+    {
+        typeOfMovement = (stamina < 70) ? (stamina > 30) ? (stamina < 20) ? "walk" : "fast walk" : "run" : "sprint";
+
+    }
+
+    
+    void Update()
+    {
+        
+    }
+}

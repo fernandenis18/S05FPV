@@ -1,0 +1,40 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEngine;
+
+public class sistemadeclima : MonoBehaviour
+{
+    float temperatura = -20;
+    bool clima;
+    void Start()
+    {
+        if (temperatura <= 0)
+        {
+            Debug.Log("clima nevado");
+
+            if(temperatura < 18) 
+            {
+                Debug.Log("clima lluvioso");
+            }
+            else
+            {
+                Debug.Log("clima nublado");
+            }
+        }
+        else 
+        {
+            Debug.Log("clima soleado");
+        }
+
+    
+    
+    
+    
+    
+    }       
+
+    
+    void Update()
+    {
+        
+    }
+}
